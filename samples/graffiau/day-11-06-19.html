@@ -1,0 +1,85 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>CO2 ar 11-06-19</title>
+      
+      
+        
+          
+        <link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-1.2.0.min.css" type="text/css" />
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-1.2.0.min.js"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="32709510-0923-4bcc-a638-6b2100b8aa8e" data-root-id="119890"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="120001">
+          {"05d77891-67ba-40ed-b241-5b52bcca1c7f":{"roots":{"references":[{"attributes":{"bottom_units":"screen","fill_alpha":{"value":0.5},"fill_color":{"value":"lightgrey"},"left_units":"screen","level":"overlay","line_alpha":{"value":1.0},"line_color":{"value":"black"},"line_dash":[4,4],"line_width":{"value":2},"render_mode":"css","right_units":"screen","top_units":"screen"},"id":"119936","type":"BoxAnnotation"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"119911","type":"PanTool"},{"id":"119912","type":"WheelZoomTool"},{"id":"119913","type":"BoxZoomTool"},{"id":"119914","type":"SaveTool"},{"id":"119915","type":"ResetTool"},{"id":"119916","type":"HelpTool"}]},"id":"119917","type":"Toolbar"},{"attributes":{"line_color":"red","line_width":0.5,"x":{"field":"x"},"y":{"field":"y"}},"id":"119925","type":"Line"},{"attributes":{},"id":"119931","type":"BasicTickFormatter"},{"attributes":{"overlay":{"id":"119936","type":"BoxAnnotation"}},"id":"119913","type":"BoxZoomTool"},{"attributes":{"line_alpha":0.1,"line_color":"#1f77b4","line_width":0.5,"x":{"field":"x"},"y":{"field":"y"}},"id":"119926","type":"Line"},{"attributes":{},"id":"119912","type":"WheelZoomTool"},{"attributes":{},"id":"119907","type":"BasicTicker"},{"attributes":{},"id":"119933","type":"BasicTickFormatter"},{"attributes":{"dimension":1,"ticker":{"id":"119907","type":"BasicTicker"}},"id":"119910","type":"Grid"},{"attributes":{"axis_label":"Amser","formatter":{"id":"119933","type":"BasicTickFormatter"},"ticker":{"id":"119902","type":"BasicTicker"}},"id":"119901","type":"LinearAxis"},{"attributes":{"below":[{"id":"119901","type":"LinearAxis"}],"center":[{"id":"119905","type":"Grid"},{"id":"119910","type":"Grid"}],"left":[{"id":"119906","type":"LinearAxis"}],"renderers":[{"id":"119927","type":"GlyphRenderer"}],"title":{"id":"119891","type":"Title"},"toolbar":{"id":"119917","type":"Toolbar"},"x_range":{"id":"119893","type":"DataRange1d"},"x_scale":{"id":"119897","type":"LinearScale"},"y_range":{"id":"119895","type":"DataRange1d"},"y_scale":{"id":"119899","type":"LinearScale"}},"id":"119890","subtype":"Figure","type":"Plot"},{"attributes":{"source":{"id":"119924","type":"ColumnDataSource"}},"id":"119928","type":"CDSView"},{"attributes":{"callback":null},"id":"119895","type":"DataRange1d"},{"attributes":{},"id":"119902","type":"BasicTicker"},{"attributes":{"axis_label":"CO2 ppm","formatter":{"id":"119931","type":"BasicTickFormatter"},"ticker":{"id":"119907","type":"BasicTicker"}},"id":"119906","type":"LinearAxis"},{"attributes":{},"id":"119899","type":"LinearScale"},{"attributes":{},"id":"119914","type":"SaveTool"},{"attributes":{"callback":null,"data":{"x":[],"y":[]},"selected":{"id":"119935","type":"Selection"},"selection_policy":{"id":"119934","type":"UnionRenderers"}},"id":"119924","type":"ColumnDataSource"},{"attributes":{},"id":"119915","type":"ResetTool"},{"attributes":{"data_source":{"id":"119924","type":"ColumnDataSource"},"glyph":{"id":"119925","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"119926","type":"Line"},"selection_glyph":null,"view":{"id":"119928","type":"CDSView"}},"id":"119927","type":"GlyphRenderer"},{"attributes":{},"id":"119897","type":"LinearScale"},{"attributes":{},"id":"119916","type":"HelpTool"},{"attributes":{},"id":"119935","type":"Selection"},{"attributes":{},"id":"119911","type":"PanTool"},{"attributes":{"ticker":{"id":"119902","type":"BasicTicker"}},"id":"119905","type":"Grid"},{"attributes":{"callback":null},"id":"119893","type":"DataRange1d"},{"attributes":{},"id":"119934","type":"UnionRenderers"},{"attributes":{"text":"CO2 ar 11-06-19"},"id":"119891","type":"Title"}],"root_ids":["119890"]},"title":"Bokeh Application","version":"1.2.0"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('120001').textContent;
+                  var render_items = [{"docid":"05d77891-67ba-40ed-b241-5b52bcca1c7f","roots":{"119890":"32709510-0923-4bcc-a638-6b2100b8aa8e"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        embed_document(root);
+                        clearInterval(timer);
+                      }
+                      attempts++;
+                      if (attempts > 100) {
+                        console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        clearInterval(timer);
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
